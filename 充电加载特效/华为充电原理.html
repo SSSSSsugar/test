@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <style>
+        .base {
+            background: #fff;
+            filter: contrast(20);
+            height: 200px;
+            position: absolute;
+            width: 300px;
+        }
+        .base::before {
+            background: #333;
+            border-radius: 50%;
+            content: "";
+            filter: blur(6px);
+            height: 120px;
+            left: 50px;
+            position: absolute;
+            top: 40px;
+            width: 120px;
+        }
+        .base::after {
+            background: #3F51B5;
+            border-radius: 50%;
+            content: "";
+            filter: blur(6px);
+            height: 80px;
+            left: 10px;
+            position: absolute;
+            top: 60px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="base"></div>
+</body>
+</html>
